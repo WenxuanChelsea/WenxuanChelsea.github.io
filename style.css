@@ -1,20 +1,41 @@
-html,body {
-  display: flex;
-  align-items: center;
+/* Background for all pages */
+html {
   justify-content: center;
-  height: 850px;
+  display: flex;
+  height: 1000px;
   background-color: #cccccc;
   background-image: linear-gradient(LavenderBlush, LightSalmon);
 }
 
+/* navigation */
+.navigation {
+  background-color: LightBlue;
+  overflow: hidden;
+}
+.navigation a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navigation a:hover {
+  background-color: lightpink;
+  color: #f2f2f2;
+}
+.navigation a.active {
+  background-color: lightpink;
+  color: white;
+}
+/* Common format for homepage and aboutMe */
 .wrapper {
   background-color: lightpink;
   max-width: 100%;
   display: flex;
   flex-direction: row;
-  height: 90%;
+  height: 80%;
 }
-
 .left, .right {
   background-color: LightBlue;
   margin: 5px;
@@ -24,28 +45,53 @@ html,body {
   flex-direction: column;
   justify-content: center;
 }
-
 .left {
   align-items: center;
   justify-content: center;
 }
-
 .refer-links {
   list-style: none;
   padding-left: 0px;
   font-size: 18px;
 }
-
-.refer-links li {
-  display: inline-block;
-  margin-right: 8px;
+div {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
 }
 
-.refer-links a {
+/* Text entry for Contact Form */
+input[type=text] {
+    width: 100%;
+    padding: 15px 15px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 5px solid LightBlue;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px 15px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 5px solid LightBlue;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* button */
+.button {
+  background-color: Lightpink;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
   text-decoration: none;
-  padding: 4px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px 10px;
+  cursor: pointer;
 }
 
-.refer-links a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
