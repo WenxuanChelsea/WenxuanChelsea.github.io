@@ -39,6 +39,7 @@ function lnameValidation(){
         return true;
     }
 }
+
 function emailValidation(){
     document.getElementById("user_email").style.border = "5px solid LightBlue";
     if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById("user_email").value)){
