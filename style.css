@@ -1,33 +1,81 @@
 /* Background for all pages */
-html {
-  justify-content: center;
-  display: flex;
-  height: 1000px;
-  background-color: #cccccc;
-  background-image: linear-gradient(LavenderBlush, LightSalmon);
+body {
+  margin: auto;
+  text-align: center; 
+  background-color: LavenderBlush;
 }
 
 /* navigation */
 .navigation {
   background-color: LightBlue;
   overflow: hidden;
+  top: 0%;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  z-index: 9999;
 }
 .navigation a {
-  float: center;
+  float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px;
   text-decoration: none;
   font-size: 20px;
 }
 .navigation a:hover {
   background-color: lightpink;
-  color: #f2f2f2;
 }
 .navigation a.active {
   background-color: lightpink;
   color: white;
 }
+.dropdown {
+  float: left;
+  overflow: hidden;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.dropbtn {
+  font-size: 20px;  
+  border: none;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 16px;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: inherit;
+  margin: auto;
+}
+.dropdown:hover .dropbtn  {
+  background-color: lightpink;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightpink;
+  box-shadow: 0px 10px 10px 0px #f2f2f2;;
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: #f2f2f2;;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: LightBlue;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* Common format for homepage and aboutMe */
 .wrapper {
   background-color: lightpink;
@@ -80,18 +128,3 @@ textarea {
     box-sizing: border-box;
     resize: vertical;
 }
-
-/* button */
-.button {
-  background-color: Lightpink;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 20px 10px;
-  cursor: pointer;
-}
-
