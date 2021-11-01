@@ -154,6 +154,10 @@ ul{
 li{
   margin: 16px;
 }
+li a{
+  margin: 5px;
+  text-align: center;
+}
 
 /* button */
 .button {
@@ -170,4 +174,185 @@ li{
 }
 .button:hover  {
   background-color: LightBlue;
+}
+
+/* Responsive Web Design */
+@media only screen and (max-width: 600px) {
+  body {
+    margin: auto;
+    text-align: center; 
+    background-color: LavenderBlush;
+  }
+  
+  /* navigation */
+  .navigation {
+    background-color: LightBlue;
+    overflow: hidden;
+    top: 0%;
+    width: 100%;
+    padding: 8px;
+    margin: auto;
+    text-align: center;
+    z-index: 9999;
+  }
+  .navigation a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .navigation a:hover {
+    background-color: lightpink;
+  }
+  .navigation a.active {
+    background-color: lightpink;
+    color: white;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0;
+  }
+  .dropbtn {
+    font-size: 15px;  
+    border: none;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: inherit;
+    margin: auto;
+  }
+  .dropdown:hover .dropbtn  {
+    background-color: lightpink;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightpink;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: #f2f2f2;;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: LightBlue;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Common format for homepage and aboutMe */
+  .wrapper {
+    background-color: lightpink;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+  }
+  .left, .right {
+    background-color: LightBlue;
+    margin: 0;
+    max-width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left {
+    align-items: center;
+    justify-content: center;
+  }
+  .refer-links {
+    list-style: none;
+    padding-left: 0px;
+    font-size: 12px;
+  }
+  div {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+  }
+  
+  /* View and Download Resume */
+  .viewResume {
+    height: 350px;
+    width: 600px;
+    border: none;
+  }
+  
+  /* Text entry for Contact Form */
+  input[type=text] {
+      width: 100%;
+      padding: 10px 10px;
+      margin: 5px 0;
+      display: inline-block;
+      border: 5px solid LightBlue;
+      box-sizing: border-box;
+  }
+  textarea {
+      width: 100%;
+      padding: 10px 10px;
+      margin: 5px 0;
+      display: inline-block;
+      border: 5px solid LightBlue;
+      box-sizing: border-box;
+      resize: vertical;
+  }
+  
+  /* Footer */
+  footer {
+    bottom: 0;
+    color: rgba(32, 10, 10, 0.808);
+    background-color: rgb(255, 245, 246);
+    padding: 12px;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+  } 
+  ul{
+    list-style: none;
+    margin: none;
+    padding: none;
+    padding-inline-start: 0%;
+  }
+  li{
+    margin: 10px;
+  }
+  li a{
+    margin: 5px;
+    text-align: center;
+  }
+  
+  /* button */
+  .button {
+    background-color: Lightpink;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 15px 10px;
+    cursor: pointer;
+  }
+  .button:hover  {
+    background-color: LightBlue;
+  }
+
 }
