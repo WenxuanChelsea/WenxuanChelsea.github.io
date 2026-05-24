@@ -1,0 +1,103 @@
+/* =========================================================================
+   Wenxuan Li — personal website
+   Stylesheet ported 1:1 from Jon Barron's website template
+   (https://jonbarron.info/), the template used by Caiyuanhao Cai's site.
+   The template is openly shared by its author for academic personal pages.
+   ========================================================================= */
+
+body {
+  margin: 0px;
+  background-color: #ffffff;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body, td, th, tr, p, a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+heading {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+name {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+.one {
+  width: 160px;
+  height: 100px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 100px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+/* First-author publications are highlighted with a light pink background. */
+tr.first-author td {
+  background-color: #fdeef2;
+}
+
+/* -------------------------------------------------------------------------
+   Light responsive layer (the original template is fixed-width; this only
+   kicks in on narrow screens and does not change the desktop appearance).
+   ------------------------------------------------------------------------- */
+@media (max-width: 700px) {
+  table.header-row,
+  table.header-row tbody,
+  table.header-row tr,
+  table.header-row td {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  tr.paper-row,
+  tr.paper-row td {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  tr.paper-row td img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

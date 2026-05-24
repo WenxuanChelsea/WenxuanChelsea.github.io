@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8eef5"/>
+      <stop offset="100%" stop-color="#c9d6e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#g)"/>
+  <circle cx="100" cy="80" r="38" fill="#94a8c2"/>
+  <path d="M 28 200 Q 28 130 100 130 Q 172 130 172 200 Z" fill="#94a8c2"/>
+  <text x="100" y="190" text-anchor="middle"
+        font-family="-apple-system, Segoe UI, sans-serif"
+        font-size="10" fill="#445" font-weight="500">
+    your photo here
+  </text>
+</svg>

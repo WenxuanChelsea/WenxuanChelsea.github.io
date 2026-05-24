@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 110" width="180" height="110">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f4f9"/>
+      <stop offset="100%" stop-color="#d9e3f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="110" fill="url(#bg)"/>
+  <!-- abstract decorative shapes -->
+  <circle cx="40" cy="55" r="22" fill="#1772d0" opacity="0.25"/>
+  <rect x="78" y="32" width="62" height="46" rx="4" fill="#1772d0" opacity="0.18"/>
+  <line x1="20" y1="92" x2="160" y2="92" stroke="#1772d0" stroke-width="1.2" opacity="0.4"/>
+  <text x="90" y="100" text-anchor="middle"
+        font-family="-apple-system, Segoe UI, sans-serif"
+        font-size="9" fill="#5a7090">
+    paper figure
+  </text>
+</svg>
