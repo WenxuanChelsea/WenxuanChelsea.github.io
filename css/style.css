@@ -11,17 +11,17 @@ body {
 }
 
 a {
-  color: #1772d0;
+  color: #063c85;
   text-decoration: none;
 }
 
 a:link, a:visited {
-  color: #1772d0;
+  color: #063c85;
   text-decoration: none;
 }
 
 a:focus, a:hover {
-  color: #f09228;
+  color: #f23a78;
   text-decoration: none;
 }
 
@@ -73,6 +73,23 @@ span.highlight {
 /* First-author publications are highlighted with a light pink background. */
 tr.first-author td {
   background-color: #fdeef2;
+}
+
+/* Publication figures — each teaser is shown at its own natural aspect
+   ratio (the Jon Barron template style used by caiyuanhao1998.github.io):
+   a fixed column width with automatic height, no forced frame. */
+tr.paper-row td:first-child img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Co-author names render in plain black — whether or not they link to a
+   Google Scholar profile — so they match the unlinked names. The paper /
+   code / data resource links keep the standard blue. */
+tr.paper-row a[href*="scholar.google.com"] {
+  color: #000000;
 }
 
 /* -------------------------------------------------------------------------
