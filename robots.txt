@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wenxuanchelsea.github.io/sitemap.xml
+Sitemap: https://www.cs.jhu.edu/~wli131/sitemap.xml
